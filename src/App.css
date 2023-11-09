@@ -1,0 +1,10 @@
+.App {
+  width: 1200px;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+#root {
+  margin: 0 auto;
+}

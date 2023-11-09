@@ -1,0 +1,73 @@
+.app-sidebar {
+  width: 35%;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+
+}
+
+.app-sidebar-header {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-sidebar-header button {
+  width: 200px;
+  height: 80px;
+  padding: 5px;
+}
+
+.button {
+  background: none;
+  border: none;
+  color: aquablue;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.app-sidebar-notes {
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+}
+
+.app-sidebar-note {
+  padding: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+.sidebar-note-ttl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-sidebar-note p {
+  margin: 10px 0;
+}
+
+.app-sidebar-note small {
+  color: #9999;
+}
+
+.app-sidebar-note:hover {
+  background-color:#0b0b0d;
+}
+
+
+.app-sidebar-note .active {
+  background-color: #dcd4d4;
+}
+
+.sidebar-note-head {
+  
+}
+
+.sidebar-note-button {
+  width: 100px;
+  height: 50px;
+  margin-left: 10px;
+}
