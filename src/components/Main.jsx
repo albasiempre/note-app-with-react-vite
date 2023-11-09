@@ -2,9 +2,9 @@ import React from 'react';
 import "./Main.css";
 // import { ReactMarkDown } from "react-markdown/react-markdown";
 
-const Main = ({activeNote, onUpdateNote}) => {
-  const onEditNote = (key, value) => {
-    onUpdateNote({
+const Main = ({activeNote, onUpdateNotes}) => {
+  const onEdit = (key, value) => {
+    onUpdateNotes({
       ...activeNote,
       [key]:value,
       // タイトルとコンテンツでkeyが動的になる
@@ -23,20 +23,20 @@ const Main = ({activeNote, onUpdateNote}) => {
         id="title"
         className="title"
         value={activeNote.title}
-        onChange={(e) => onEditNote("title", e.target.value)}
+        onChange={(e) => onEdit("title", e.target.value)}
         />
         <input
         id="author"
         className="author"
         value={activeNote.author}
-        onChange={(e) => onEditNote("author", e.target.value)}
+        onChange={(e) => onEdit("author", e.target.value)}
         />
         </div>
         <textarea
         id="content"
         placeholder='write your note here'
         value={activeNote.content}
-        onChange={(e) => onEditNote("content", e.target.value)}
+        onChange={(e) => onEdit("content", e.target.value)}
         ></textarea>
       </div>
     </div>

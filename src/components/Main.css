@@ -1,33 +1,59 @@
 .app-main {
-  width: 65%;
-  height: 100vh;
+  width: 60%;
+  /* height: 100vh; */
+  margin-top: 40px;
+  margin-left: 10px;
 }
 
 .app-main-note-edit {
-  height: 50vh;
+  width: 100%;
+  margin-top: 15px;
 }
 
-.app-main-note-edit {
-  padding: 25px;
-}
-
-.app-main-note-edit input, textarea {
+#title {
   display: block;
   border: 1px solid #ddd;
-  margin-bottom: 20px;
   width: 100%;
-  height: calc(100vh - 300px);
   padding: 10px;
   resize: none;
   font-size: 16px;
   border-radius: 10px;
-}
-
-.app-main-note-edit .title {
+  background-color: #252525;
   height: 50px;
   font-size: 2rem;
   padding: 10px;
   margin-right: 5px;
+}
+
+#author {
+  display: block;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 100%;
+  /* height: calc(100vh - 300px); */
+  padding: 10px;
+  resize: none;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #252525;
+
+}
+
+#content {
+  display: block;
+  border: 1px solid #ddd;
+  margin-top: 50px;
+  width: 100%;
+  height: calc(80vh - 200px);
+  padding: 10px;
+  resize: none;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #252525;
+}
+
+.app-main-note-edit .title .author:hover {
+  border-color:#646cff;
 }
 
 .app-main-note-edit .author {
@@ -40,20 +66,9 @@
   display: flex;
 }
 
-.app-main-note-preview {
-  border-top: 1px solid #ddd;
-  overflow-y: scroll;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-
 .preview-title {
   padding: 25px 25px 0 25px;
   margin: 0;
-}
-
-.markdown-preview {
-  line-height: 2rem;
-  padding: 0 25px 25px 25px;
 }
 
 .no-active-note {

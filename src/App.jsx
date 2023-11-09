@@ -46,9 +46,9 @@ function App() {
     return notes.find((note) => note.id === activeNote)
   }
 
-  const onUpdateNote = (updatedNote) => {
+  const onUpdateNotes = (updatedNote) => {
     // 修正された新しい配列を並べる
-    const updatedNotesArray = notes.map((note) => {
+    const updatedNewArray = notes.map((note) => {
       if(note.id === updatedNote.id) {
         return updatedNote;
       }
@@ -56,13 +56,13 @@ function App() {
         return note;
       }
     });
-    setNotes(updatedNotesArray);
+    setNotes(updatedNewArray);
   }
 
  return (
   <div className="App">
     <Sidebar onAddNote={onAddNote} notes={notes} onDeleteNote={onDeleteNote} activeNote={activeNote} setActiveNote={setActiveNote}/>
-    <Main activeNote={getActiveNote()} onUpdateNote={onUpdateNote}/>
+    <Main activeNote={getActiveNote()} onUpdateNotes={onUpdateNotes}/>
   </div>
   )
 } 

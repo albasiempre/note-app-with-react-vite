@@ -1,6 +1,6 @@
 .app-sidebar {
   width: 35%;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #646cff;
   height: 100vh;
 
 }
@@ -16,6 +16,7 @@
   width: 200px;
   height: 80px;
   padding: 5px;
+  background-color:#252525;
 }
 
 .button {
@@ -31,6 +32,7 @@
 .app-sidebar-notes {
   height: calc(100vh - 80px);
   overflow-y: scroll;
+  margin-right: 10px;
 }
 
 .app-sidebar-note {
@@ -38,6 +40,8 @@
   cursor: pointer;
   transition: all 0.3s;
   border-radius: 10px;
+  background-color: #252525;
+  margin-bottom: 10px;
 }
 
 .sidebar-note-ttl {
