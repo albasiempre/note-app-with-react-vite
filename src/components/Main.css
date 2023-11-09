@@ -22,15 +22,13 @@
   height: 50px;
   font-size: 2rem;
   padding: 10px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 #author {
   display: block;
   border: 1px solid #ddd;
-  margin-bottom: 20px;
   width: 100%;
-  /* height: calc(100vh - 300px); */
   padding: 10px;
   resize: none;
   font-size: 16px;
@@ -42,7 +40,7 @@
 #content {
   display: block;
   border: 1px solid #ddd;
-  margin-top: 50px;
+  margin-top: 10px;
   width: 100%;
   height: calc(80vh - 200px);
   padding: 10px;
@@ -57,7 +55,7 @@
 }
 
 .app-main-note-edit .author {
-  height: 25px;
+  /* height: 25px; */
   font-size: 1rem;
   padding: 5px;
 }

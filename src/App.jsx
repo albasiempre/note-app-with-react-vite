@@ -60,6 +60,7 @@ function App() {
   }
 
  return (
+  
   <div className="App">
     <Sidebar onAddNote={onAddNote} notes={notes} onDeleteNote={onDeleteNote} activeNote={activeNote} setActiveNote={setActiveNote}/>
     <Main activeNote={getActiveNote()} onUpdateNotes={onUpdateNotes}/>
